@@ -66,6 +66,7 @@ type BlockContext struct {
 	// CanTransfer 返回账户是否有足够的以太币转移
 	CanTransfer CanTransferFunc
 	// Transfer 将以太币从一个账户转移到另一个账户
+	Transfer TransferFunc
 	// GetHash 返回对应 n 的哈希
 	GetHash GetHashFunc
 

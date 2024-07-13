@@ -35,8 +35,7 @@ type (
 	CanTransferFunc func(StateDB, common.Address, *uint256.Int) bool
 	// TransferFunc is the signature of a transfer function
 	TransferFunc func(StateDB, common.Address, common.Address, *uint256.Int)
-	// GetHashFunc returns the n'th block hash in the blockchain
-	// and is used by the BLOCKHASH EVM op code.
+	// GetHashFunc
 	GetHashFunc func(uint64) common.Hash
 )
 
